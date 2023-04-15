@@ -10,7 +10,8 @@
 List result= (List) request.getAttribute("brands");
 Iterator it = result.iterator();
 while(it.hasNext()){
-out.println("- "+it.next()+"<br>");
+out.println("\b "+it.next()+"<br>");
+
 }
 %>
 </body>
