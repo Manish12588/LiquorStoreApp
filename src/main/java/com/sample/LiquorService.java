@@ -23,7 +23,34 @@ public class LiquorService {
         }else if(type.equals(LiquorType.BEER)){
             brands.add("Corona");
 
-        }else {
+        } else if (type.equals(LiquorType.SUNDAY)) {
+            brands.add("SUNDAY");
+
+        }
+        else if (type.equals(LiquorType.MONDAY)) {
+            brands.add("MONDAY");
+
+        }
+        else if (type.equals(LiquorType.TUESDAY)) {
+            brands.add("TUESDAY");
+
+        }
+        else if (type.equals(LiquorType.WEDNESDAY)) {
+            brands.add("WEDNESDAY");
+
+        }
+        else if (type.equals(LiquorType.THURSDAY)) {
+            brands.add("THURSDAY");
+
+        }
+        else if (type.equals(LiquorType.FRIDAY)) {
+            brands.add("FRIDAY");
+
+        }
+        else if (type.equals(LiquorType.SATURDAY)) {
+            brands.add("SATURDAY");
+
+        } else {
             brands.add("No Brand Available");
         }
         return brands;
