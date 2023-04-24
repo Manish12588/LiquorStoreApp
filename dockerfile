@@ -1,5 +1,5 @@
-FROM tomcat:7.0-jdk8-openjdk-slim
-RUN apt-get update && apt-get install -y maven
+FROM tomcat:latest
+RUN apt-get update && apt-get install maven -y
 WORKDIR /app
 COPY pom.xml /app
 RUN mvn dependency:resolve
